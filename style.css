@@ -1,10 +1,18 @@
 body{
-     background: rgb(212, 210, 210);
+     background: rgb(235, 233, 233);
 }
 .dino{
      width: 60px;
      height: 60px;
-     background-color: url(dino.png);
+     background-image: url(dino.png);
+     position: absolute;
+     bottom: 0;
+}
+
+.cactus{
+     width: 60px;
+     height: 60px;
+     background-image: url(cactus.png);
      position: absolute;
      bottom: 0;
 }
