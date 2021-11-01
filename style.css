@@ -1,5 +1,5 @@
 body{
-     background: rgb(235, 233, 233);
+     background: rgb(211, 208, 208);
 }
 .dino{
      width: 60px;
@@ -8,11 +8,34 @@ body{
      position: absolute;
      bottom: 0;
 }
-
 .cactus{
      width: 60px;
      height: 60px;
      background-image: url(cactus.png);
      position: absolute;
      bottom: 0;
+}
+.game-over {
+     text-align: center;
+     color: red;
+     margin-top: 50px;
+     font-family: arial;
+}
+@keyframes slideright {
+     from {
+          background-position: 40000%;
+     }
+     to {
+          background-position: 0%;
+     }
+}
+.background{
+     position: absolute;
+     bottom: 0px;
+     background-image: url(background.png);
+     background-repeat: repeat-x;
+     animation: slideright 600s infinite linear;
+     -webkit-animation: slideright 600s infinite linear;
+     width: 100%;
+     height: 200px;
 }
